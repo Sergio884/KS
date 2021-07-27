@@ -102,23 +102,10 @@
 
 
 
-        <section id="mis-proyectos">
+        <section class="general" id="mis-proyectos">
             <h3>Nuestros Proyectos</h3>
             <div class="swiper-container">        
                 <div class="swiper-wrapper">                      
-
-                    <div class="swiper-slide">
-                        <div class="proyecto">
-                            <div class="publicacion">                                    
-                                <div class="contenedor-proyecto-vfd"><video class="videoVFD" src="/videos/vfdL.mp4" muted autoplay loop></video></div>
-                                <div class="contenido">
-                                <h4>Verbs For Dummies</h4>
-                                <p>Aplicación para prácticar los verbos en inglés hecha con Python y la biblioteca Tkinter</p>
-                                <a href="#" target="_blank">VER MÁS →</a>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
 
                     <div class="swiper-slide">
                         <div class="proyecto">
@@ -127,7 +114,7 @@
                                 <div class="contenido">
                                     <h4>Gestión de Alumnos</h4>
                                     <p>Página web en la que se aplica un CRUD completo, así como generación de PDF's con la información, está hecho con JavaScript, PHP, HTML, CSS y utiliza MySQL como sistema de gestión de base de datos</p>
-                                    <a href="https://www.youtube.com/watch?v=M8Vdd0MSqdU&t=989s" target="_blank">VER MÁS →</a>                                        
+                                    <a href="#mis-proyectos" onclick="toggle('https://www.youtube.com/embed/M8Vdd0MSqdU')">VER MÁS →</a>                                        
                                 </div>
                             </div>
                         </div>
@@ -184,6 +171,21 @@
             });
         </script>
 
+        <script type="text/javascript">
+            function toggle(ubicacion){
+                document.getElementById('slider').src = ubicacion;
+                var blur = document.getElementById('mis-proyectos')
+                blur.classList.toggle('active')
+                var blur = document.getElementById('popup')
+                blur.classList.toggle('active')
+            }
+        </script>   
+        <div id="popup">
+            <div class="contenido">
+                <iframe id="slider" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <a href="#footer" onclick="toggle()">Cerrar</a>
+            </div>
+        </div>
 
     </main>
 

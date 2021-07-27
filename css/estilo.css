@@ -10,3 +10,352 @@ body{
     background: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(255,255,255,1) 28%);  
     overflow-x: hidden;
 }
+
+/***WHATSAPP****/
+#whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+#whatsapp img{
+    height: 70px;
+    transition: 0.6s;
+}
+#whatsapp img:hover{
+    transform: scale(1.3);
+}
+@media (max-width:380px){
+    #whatsapp{
+        bottom: 2px;
+        right: 2px;
+    }
+}
+
+
+
+
+
+
+
+
+#nada{
+    height: 100vh;
+    background-color: #12223D;
+}
+
+
+
+
+
+
+
+/******************************** Funcionamiento **********************************/
+#funcionamiento{
+    margin-top: 30px;
+    margin-bottom: 150px;
+    width: 100%;    
+    background-color: #ecf0f0;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+}
+#funcionamiento h1{
+    margin-top: 0px;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #12223D;
+    padding-bottom: 0;
+}
+
+#funcionamiento .pasos{
+    position: absolute;
+    background-color: #12223D;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50%;
+    right: 42%;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+}
+#funcionamiento .pasos p{
+    color: #91dcdc;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#funcionamiento .contenedor{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    width: 250px;
+    height: 850px;
+}
+#funcionamiento .raya{
+    position: absolute;
+    width: 3px;
+    height: 320%;
+    background-color: #12223D;
+    top: -160px;
+    left: 49.6%;
+    z-index: 2 !important;
+}
+
+#funcionamiento .contenido{
+    position: relative;
+    left: 30px;
+    width: 90%;
+    height: 380px;
+    top: 2px !important;
+}
+.revelar{
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 2s ease;
+}
+
+ .activo{
+    transform: translateY(0px);
+    opacity: 1;
+    z-index: 20;
+}
+
+
+
+
+.pasos .imagen{
+    left: 125px;
+    top: -10px;
+    position: absolute  ;
+    height: 140px;
+    width: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pie-img{
+    color: #000 !important;
+    font-size: 15px !important;
+    margin-top: 2px;
+
+}
+
+.dos .imagen{
+    left: -220px;
+} 
+
+@media (max-width:615px) {
+    .pasos .imagen{
+        left: 70px;
+        height: 140px;
+        width: 155px;
+        z-index: -10;
+    }
+    .pasos .contenido{
+        right: 100px !important;
+    }
+    #funcionamiento{
+        align-items: baseline;    
+        margin-bottom: 20%;
+    }
+    #funcionamiento h1{
+        padding: 10px 10px;
+        font-size: 25px;
+    }
+    #funcionamiento .contenedor{
+        width: 65%;
+        align-items: baseline;
+    }
+    #funcionamiento img{
+        height: 110px;
+    }
+    .computadora{
+        height: 100px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/****************Mis proyectos*************/
+#mis-proyectos{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #12223D;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#mis-proyectos img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#mis-proyectos .proyecto{
+    position: relative;
+    height: 420px;
+    width: 324px;    
+    border-radius: 15px;
+    left: -4%;
+    background: rgb(157,0,0);
+background: linear-gradient(45deg, rgba(35,90,165,0.95) 25%, rgba(145,220,220,0.95) 100%);
+}
+
+#mis-proyectos .contenido{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+#mis-proyectos a{
+    position: absolute;
+    background: #297ec2;
+    text-decoration: none;
+    color: #12223D;
+    border-radius: 10px;
+    padding: 5px 15px;
+    left: 10px;
+    bottom: 10px;
+    transition: 0.5s;
+}
+#mis-proyectos a:hover{
+    font-size: 19px;
+}
+#mis-proyectos p{
+    color: #ecf0f0;
+    margin-top: 0px;
+}
+#mis-proyectos h4{
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-container h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  .swiper-slide {
+    width: 304px !important;
+    filter: blur(2px);
+  }
+
+  .swiper-slide-active{
+    filter: blur(0px);
+}
+
+  .swiper-slide-active .contenedor-proyecto-ipn{
+      filter: blur(0px);
+      background-image: url(../img/ipn.gif) !important;
+  }
+
+#mis-proyectos .contenedor-proyecto-ipn{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 152px;
+    background-image: url(../img/ipnFull.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: 2s ease background-image;
+}
+
+
+
+
+#mis-proyectos .contenedor-proyecto-trobify{
+  z-index: 4 !important;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 151px;
+  background-image: url(../img/trobify.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 2s ease background-image;
+}
+
+.swiper-slide .videoTrobify{
+    display: none;
+}
+.swiper-slide-active .videoTrobify{
+    filter: blur(0px);
+    display: block;
+    height: 151px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+#mis-proyectos .contenedor-proyecto-KSInversiones{
+  z-index: 4 !important;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 151px;
+  background-image: url(../img/KSInversiones.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 2s ease background-image;
+}
+
+.swiper-slide .videoKSInversiones{
+    display: none;
+}
+.swiper-slide-active .videoKSInversiones{
+    filter: blur(0px);
+    display: block;
+    height: 151px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
+
+
+.swiper-slide .videoVFD{
+    display: none;
+}
+.swiper-slide-active .videoVFD{
+    filter: blur(0px);
+    display: block;
+    height: 200px !important;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#mis-proyectos .contenedor-proyecto-vfd{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 200px;
+  background-image: url(../img/vfd.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 2s ease background-image;
+}
+
+
+

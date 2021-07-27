@@ -52,8 +52,8 @@ body{
 
 /******************************** Funcionamiento **********************************/
 #funcionamiento{
-    margin-top: 30px;
-    margin-bottom: 150px;
+    padding-top: 30px;
+    padding-bottom: 100px;
     width: 100%;    
     background-color: #ecf0f0;
     display: flex;    
@@ -130,11 +130,11 @@ body{
 
 
 .pasos .imagen{
-    left: 125px;
+    left: 105px;
     top: -10px;
     position: absolute  ;
     height: 140px;
-    width: 195px;
+    width: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,11 +145,12 @@ body{
     color: #000 !important;
     font-size: 15px !important;
     margin-top: 2px;
+    padding-left: 20px;
 
 }
 
 .dos .imagen{
-    left: -220px;
+    left: -250px;
 } 
 
 @media (max-width:615px) {
@@ -177,8 +178,8 @@ body{
     #funcionamiento img{
         height: 110px;
     }
-    .computadora{
-        height: 100px !important;
+    .grande{
+        height: 80px !important;
     }
 }
 
@@ -199,10 +200,20 @@ body{
     justify-content: center;
     background-color: #12223D;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     width: 100%;
+    border: 0;
     overflow: hidden;
 }
+
+#mis-proyectos h3{
+    margin-top: -40px;
+    margin-bottom: 50px;
+    color: #ecf0f0;
+    font-size: 35px;
+}
+
 #mis-proyectos img{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;

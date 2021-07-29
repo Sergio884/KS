@@ -43,6 +43,10 @@ body{
     height: 100vh;
     background-color: #12223D;
 }
+#relleno-claro{
+    height: 100vh;
+    background-color: #ecf0f0;
+}
 
 
 
@@ -125,6 +129,11 @@ body{
     opacity: 1;
     z-index: 20;
 }
+
+
+
+
+
 
 
 
@@ -295,6 +304,11 @@ background: linear-gradient(45deg, rgba(35,90,165,0.95) 25%, rgba(145,220,220,0.
 
 
 
+
+
+
+
+
 #mis-proyectos .contenedor-proyecto-trobify{
   z-index: 4 !important;
   border-top-left-radius: 15px;
@@ -368,7 +382,7 @@ background: linear-gradient(45deg, rgba(35,90,165,0.95) 25%, rgba(145,220,220,0.
     /* border: 2px solid #000; */
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 #popup .contenido{
@@ -418,6 +432,47 @@ background: linear-gradient(45deg, rgba(35,90,165,0.95) 25%, rgba(145,220,220,0.
         grid-template-columns: 90%;
     }
 }
+
+
+
+
+
+
+
+
+
+/*************CONTACTO******************/
+#contacto{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #12223D;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contacto h1{
+    color: #ecf0f0;
+    font-size: 35px;
+}
+
+#contacto .contenedor{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 5%;
+}
+
+#contacto .info{
+    width: 100%;
+    color: #ecf0f0;
+}
+
+
+
 
 
 

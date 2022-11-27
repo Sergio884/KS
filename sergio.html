@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/sliderProductos.css?a=1234">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
+<script src="js/slider.js"></script>
     <title>KS</title>
 </head>
 <body>
@@ -27,8 +30,86 @@
 
     <main>
 
-        <section id="nada">
+
+        <section id="beneficios">
+            <h1>¿Qué beneficios ofrecemos?</h1>
+            <p>Al crear tu propio sitio web con nosotros, obtendrás los siguientes beneficios y ventajas sobre la demás competencia:</p>
+            <div class="slider-contenido">
+               <img class="atras"src="img/chevron-izquierdo.png" alt="flecha izquierda">
+                    <div class="slider-lista">
+                           <div class="beneficio">
+                                <div class="imagen">
+                                    <img src="img/webSearch.png" alt="">
+                                </div>
+                                <p>
+                                    Mejor posicionamiento               
+                                </p>
+                           </div>
+
+
+                            <div class="beneficio">
+                                 <div class="imagen">
+                                     <img src="img/whatsapp.png" alt="">
+                                 </div>
+                                 <p>
+                                     Certificado SSL2                
+                                 </p>
+                            </div>
+
+
+                            <div class="beneficio">
+                                 <div class="imagen">
+                                     <img src="img/security.png" alt="">
+                                 </div>
+                                 <p>
+                                     Certificado SSL               
+                                 </p>
+                            </div>
+
+                            <div class="beneficio">
+                                 <div class="imagen">
+                                     <img src="img/whatsapp.png" alt="">
+                                 </div>
+                                 <p>
+                                     Certificado SSL4                
+                                 </p>
+                            </div>
+
+                            <div class="beneficio">
+                                 <div class="imagen">
+                                     <img src="img/whatsapp.png" alt="">
+                                 </div>
+                                 <p>
+                                     Certificado SSL5              
+                                 </p>
+                            </div>
+
+                            <div class="beneficio">
+                                <div class="imagen">
+                                    <img src="img/whatsapp.png" alt="">
+                                </div>
+                                <p>
+                                    Certificado SSL6              
+                                </p>
+                           </div>
+
+                           <div class="beneficio">
+                                <div class="imagen">
+                                    <img src="img/whatsapp.png" alt="">
+                                </div>
+                                <p>
+                                    Certificado SSL7              
+                                </p>
+                        </div>
+
+                    </div>
+               <img class=" siguiente"src="img/chevron-derecho.png" alt="flecha derecha">
+            </div>
+            <div role="tablist"class="slider-indicadores"></div>
         </section>
+
+
+        <hr>
 
         <section id="funcionamiento">
             <h1>¿Cómo creamos tu sito web en KS?</h1>
@@ -100,7 +181,7 @@
 
 
 
-
+<!-- 
         <section class="general" id="mis-proyectos">
             <h3>Nuestros Proyectos</h3>
             <div class="swiper-container">        
@@ -169,7 +250,7 @@
                 }
             });
         </script>
-
+ -->
         <script type="text/javascript">
             function toggle(ubicacion){
                 document.getElementById('slider').src = ubicacion;
@@ -214,5 +295,8 @@
     <footer>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+    <script src="js/sliderProductos.js"></script>
 </body>
 </html>

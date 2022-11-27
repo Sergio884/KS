@@ -1,0 +1,91 @@
+
+.slider-contenido{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    align-items: center;
+    
+}
+
+.atras, .siguiente{
+    /* position: absolute; */
+    display: block;
+    width: 38px !important;
+    height: 38px !important;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.atras:hover, .siguiente:hover{
+   opacity: 1;
+}
+
+.slider-lista{
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    width: 80%;
+}
+.slider-link{
+    text-align: center;
+}
+
+.slider-link:hover{
+    transform: scale(1.05);
+    -webkit-box-shadow: 6px 0px 14px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 0px 14px -5px rgba(0,0,0,0.75);
+    box-shadow: 6px 0px 14px -5px rgba(0,0,0,0.75);
+
+}
+.card{
+    text-align: center;
+    text-decoration: none;
+}
+
+.glider-dot{
+    display: block;
+    width: 30px !important;
+    height: 4px !important;
+    background-color: rgb(255, 255, 255) !important;
+    opacity: .7;
+    border-radius: 0;
+}
+.glider-dot:hover{
+    opacity: 1;
+}
+
+.glider-dot.active{
+    background-color: black !important;
+}
+
+
+
+.slider-boton{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    width: 30%;
+    text-decoration: none;
+    height: 40px;
+    padding-top: 15px;
+    margin-left: 35%;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    transition: width 1s, background 1s, color 1s;
+}
+.slider-boton:hover{
+    background: #ffd000;
+    color: #0e0e0e;
+    -webkit-box-shadow: 17px 26px 53px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 17px 26px 53px -7px rgba(0,0,0,0.75);
+    box-shadow: 17px 26px 53px -7px rgba(0,0,0,0.75);
+}
+
+@media (max-width:778px) {
+    .slider-boton{
+        width: 90%;
+        margin-left: 5%;
+    }
+}

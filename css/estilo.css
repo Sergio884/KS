@@ -1,3 +1,9 @@
+:root{
+    --color-background : #F0F4FF;
+    
+}
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -6,8 +12,9 @@ html{
 body{
     font-family: 'Cabin', sans-serif;
     margin: 0;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(255,255,255,1) 28%);  
+    /* background: rgb(0,0,0); */
+    /* background: linear-gradient(180deg, rgba(0,0,0,1) 12%, rgba(255,255,255,1) 28%);   */
+    background: var(--color-background);
     overflow-x: hidden;
 }
 

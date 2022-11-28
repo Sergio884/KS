@@ -1,8 +1,9 @@
 .main-container{
-    height: 100vh;
     position: relative;
     z-index: 2;
     overflow-y: hidden;
+    background: 1vh;
+    height: 1080px !important;
 }
 
 .color-change-2x {
@@ -40,21 +41,18 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     z-index: 3;
-
 }
 
 .principal-image{
     width: 100%;
-   
-
 }
 
 .principal-image img{
     margin: auto;
     margin-top: 10rem;
     width: 80%;
+    height: 80%;
     -webkit-filter: drop-shadow(2px 5px 5px rgb(61, 61, 61));
-   
     animation: translate-y 2s linear infinite alternate;
 }
 
@@ -70,7 +68,6 @@
     color: aliceblue;
     overflow-wrap: break-word;
     text-align: justify;
-
 }
 
 .principal-content-container a{

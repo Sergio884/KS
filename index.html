@@ -2,18 +2,22 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width,user-scalable=no">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/service.css" />
+    <link rel="stylesheet" href="css/sliderProductos.css?a=1234">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>KS</title>
 </head>
@@ -23,48 +27,95 @@
     <head>
         <nav class="nav-container" id="nav-container">
             <div class="logo-container">
-                <img src="img/SAORUS.png" alt="" >
+                <img src="img/SAORUS.png" alt="" />
             </div>
-            <div class="rutas-container " id="rutas-container">
+            <div class="rutas-container" id="rutas-container">
                 <a href="#">Servicios</a>
                 <a href="#">Beneficios</a>
                 <a href="#">Cómo funciona</a>
                 <a href="#">Contáctanos</a>
-                
             </div>
             <div class="menu-burgger">
-                <img  src="img/menu.svg" alt="" id="menu_burgger">
+                <img src="img/menu.svg" alt="" id="menu_burgger" />
             </div>
         </nav>
     </head>
-    
-    <main class="main-container color-change-2x">
-        
-        <div class="wave hidden" ></div>
-        <div class="blobs"></div>
-        <section class="principal-container">
-            <div class="principal-content-container">
-                <h1>
-                    Optimiza en 90% la gestión del pago a tus proveedores y comisionistas
-                </h1>
-                <p>
-                    Únete a la plataforma de emisión electrónica y pagos masivos para comisionistas. Todo online y disponible 24/7
-                </p>
-                <a href="#">Quiero una asesoría gratuita</a>
-            </div>
-            <div class="principal-image ">
-                <img src="/img/principal-img.png" alt="" width="400px">
-            </div>
 
+    <main class="">
+        <section class="main-container color-change-2x">
+            <div class="wave hidden"></div>
+            <div class="blobs"></div>
+            <section class="principal-container">
+                <div class="principal-content-container">
+                    <h1>
+                        Optimiza en 90% la gestión del pago a tus proveedores y
+                        comisionistas
+                    </h1>
+                    <p>
+                        Únete a la plataforma de emisión electrónica y pagos masivos para
+                        comisionistas. Todo online y disponible 24/7
+                    </p>
+                    <a href="#">Quiero una asesoría gratuita</a>
+                </div>
+                <div class="principal-image">
+                    <img src="/img/principal-img.png" alt="" width="400px" />
+                </div>
+            </section>
         </section>
-        
+        <section class="service-container">
+            <div class="service-image">
+                <img src="img/build_web.svg" alt="">
+            </div>
+            <div class="services-container" id="beneficios">
+                <h2>Servicios</h2>
+                <h3>Descubre nuestra suite de innovaciones</h3>
+                <p>
+                    Utiliza solo lo que tu empresa necesita y crea el sistema que más se acomode para tu negocio 
+                </p>
+                <div class="slider-contenido">
+                    <img class="atras" src="img/chevron-izquierdo.png" alt="flecha izquierda" />
+                    <div class="slider-services">
+                        <div class="service">
+                            <img src="img/gif/navegador.gif" alt="">
+                            <h4>Creación de un sitio web</h4>
+                            <p>
+                                Creamos un sitio web a la media, para que puedas tener la mejor carta de presentación para tu negocio
+                            </p>
+                        </div>
+                        <div class="service">
+                            <img src="img/gif/pago.gif" alt="">
+                            <h4>Creación de E-Commerce</h4>
+                            <p>
+                                Creamos un portal a la medida para que puedas llevar las ventas de tus productos o servicios a donde quieras
+                            </p>
+                        </div>
+                        <div class="service">
+                            <img src="img/gif/compras.gif" alt="">
+                            <h4>Implementación de una pasarela de pago</h4>
+                            <p>
+                                Si ya tienes un sitio web pero aún no aceptas tarjetas de crédito/debito de tus clientes, no te preocupes nosotros te ayudamos a implementarla
+                            </p>
+                        </div>
+                        <div class="service">
+                            <img src="img/gif/html.gif" alt="">
+                            <h4>Creación de una plataforma personalizada</h4>
+                            <p>
+                                Si deseas crear una plataforma hecha a la medida que automatice algún proceso en tu negoció no te preocupes nosotros podemos crear un sistema que te ayude con eso
+                            </p>
+                        </div>
+                    </div>
+                    <img class="siguiente" src="img/chevron-derecho.png" alt="flecha derecha" />
+                </div>
+                <div role="tablist" class="slider-indicadores"></div>
+            </div>
+        </section>
     </main>
 
-
-    <footer>
-
-    </footer>
+    <footer></footer>
 </body>
 
-    <script src="js/navBar.js"></script>
+<script src="js/navBar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+<script src="js/sliderService.js"></script>
+
 </html>

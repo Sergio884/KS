@@ -37,6 +37,8 @@ document.addEventListener("DOMContentLoaded", function(){
           ]
     });
 
+    
+
     // let links= document.querySelectorAll(".slider-link");
     // let imageneslink= document.querySelectorAll(".producto");
     // // while(true)

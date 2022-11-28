@@ -1,7 +1,7 @@
 :root{
     --color-background : #F0F4FF;
-    --elements-color: #3f7cbd;
-    --element-content-color: #06befc;
+    --elements-color: #99dbff;
+    --element-content-color: #b6edff;
     --text-content-color: #221f30;
     --text-title-color: #0e0e0e;
 }
@@ -153,7 +153,7 @@ body{
     font-size: 35px;
     text-align: center;
     margin-bottom: 40px;
-    color: #000213;
+    color: var(--text-content-color);
     padding-bottom: 0;
 }
 
@@ -172,7 +172,7 @@ body{
     z-index: 20;
 }
 #funcionamiento .pasos p{
-    color: var(--element-content-color);
+    color: var(--color-background);
     font-size: 30px;
     font-weight: 900;
 }
@@ -201,6 +201,7 @@ body{
     width: 90%;
     height: 380px;
     top: 2px !important;
+
 }
 .revelar{
     opacity: 0;
@@ -232,14 +233,18 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 46px 0 rgb(66 1 131 / 7%);
+    padding-bottom:50px;
+    border-radius: 10px;
 }
 
 .pie-img{
-    color: #000 !important;
+    color: var(--text-content-color) !important;
     font-size: 15px !important;
     margin-top: 2px;
     padding-left: 20px;
-
+    font-weight: 500 !important;
 }
 
 .dos .imagen{

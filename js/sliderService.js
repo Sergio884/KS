@@ -1,14 +1,24 @@
 document.addEventListener("DOMContentLoaded", function(){
 
     let a =new Glider(document.querySelector('.slider-services'),{
-        slidesToShow: 2,
+        slidesToShow: 1,
        
         draggable: true,
         dots: '.slider-indicadores',
         arrows: {
             prev: '.atras',
             next: '.siguiente'
-        }
+        },responsive: [
+            
+            {
+              // screens greater than >= 1024px
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: '2',
+                slidesToScroll: '2',
+              }
+            }
+          ]
       });
       console.log(a)
 

@@ -30,7 +30,8 @@
 }
 .services-container h3{
     font-size: 44px;
-    text-align: justify;
+    text-align: left;
+    margin: 0;
 
 }
 
@@ -61,5 +62,13 @@ box-shadow: 10px 10px 20px -13px rgba(105,105,105,1);
 
 .service img{
     width: 80px;
+}
+
+@media (max-width:778px) {
+    
+    .service-container{
+        grid-template-columns: 100%;
+    }
+
 }
 

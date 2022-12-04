@@ -3,8 +3,7 @@
     grid-template-columns: 40% 60%;
     width: 100%;
     align-items: center;
-    justify-content: center;
-   
+    justify-content: center;    
 }
 
 .service-image{
@@ -18,8 +17,6 @@
 .services-container{
     text-align: justify;
     width: 100%;
-    
-    
     padding: 1rem;
 }
 
@@ -49,7 +46,7 @@
     justify-content: initial;
     text-align: justify;
     background-color: white;
-    border-radius: 0.5rem;
+    border-radius: 10px;
     padding: 1rem;
     margin-top: 1rem;
     margin-right: 1rem;

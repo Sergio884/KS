@@ -148,7 +148,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin: auto;
-    background-image: url("../img/vectores/v4.png");
+    background-image: url("../img/vectores/v1.png");
 }
 #funcionamiento h1{
     margin-top: 0px;
@@ -525,6 +525,25 @@ background: linear-gradient(45deg, rgba(35,90,165,0.95) 25%, rgba(145,220,220,0.
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 50px;
+}
+
+#contacto h2{
+    margin: auto;
+    width: 85%;
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.contenedor-contacto{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 30px 0 rgb(66 1 131 / 14%);
+    width: 400px;
+    height: 470px;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 #contacto h1{
@@ -532,22 +551,94 @@ background: linear-gradient(45deg, rgba(35,90,165,0.95) 25%, rgba(145,220,220,0.
     font-size: 35px;
 }
 
-#contacto .contenedor{
+#contacto .contenedor-campos{
+    margin: auto;
+    width: 90%;
+    height: 80%;
     position: relative;
-    top: 10%;
-    left: 10%;
-    display: grid;
-    grid-template-columns: 40% 40%;
-    gap: 5%;
+    display:flex;
+    justify-content: center;
 }
 
-#contacto .info{
-    width: 100%;
+#contacto .campo{
+    margin: auto;
+    width: 350px;
+    margin-bottom: 35px;
+    margin-top: -15px;
+}
+
+#contacto .campo p{
+    margin-bottom: 5px;
+    font-weight: 100;
     color: var(--text-content-color);
+    text-align: left;
+    margin-left: -3px;
+}
+
+#contacto input,textarea{
+    width: 100%;
+    margin-left: -4px;
+    border-radius: 6px;
+    padding: 4px;
+    border: 1px solid rgb(141, 141, 141);
+}
+
+#contacto input::placeholder,textarea::placeholder{
+    color: rgb(173, 173, 173);
+    font-weight: 100;
 }
 
 
 
+#contacto textarea{
+    outline: none;
+    resize: none;
+    height: 55px;
+}
 
+#contacto form{
+    margin: auto;
+    margin-top: 0px;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+#contacto button{
+    background-color: #00CFDE;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    width: 120px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 25%);
+    transition: background-color ease-in-out 0.5s;
+    transition: transform ease-in-out 0.5s;
+}
 
+#contacto button:hover{
+    background-color: #34d4e9;
+    transform: scale(1.02);
+}
+
+@media (max-width:470px){
+    .contenedor-contacto{
+        width: 70%;
+        padding-top: 10px;
+    }
+    #contacto .campo{
+        width: 90%;        
+    }
+}
+
+@media (max-width:330px){
+    .contenedor-contacto{
+        height: 500px;
+    }
+}

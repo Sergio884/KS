@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: 30% 70%;
     position: fixed;
-    z-index: 3;
+    z-index: 100;
     width: 100%;
     transition: all 0.5s ease-in-out;
     padding: 1rem;
@@ -63,7 +63,6 @@
         display: grid;
         grid-template-columns: 30% 70%;
         position: fixed;
-        z-index: 3;
         width: 100%;
     }
     .menu-burgger{

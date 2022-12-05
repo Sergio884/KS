@@ -43,6 +43,41 @@ body{
     }
 }
 
+/***Encabezado****/
+.encabezado-contenedor{
+    margin: auto;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 35px;
+
+}
+
+
+.encabezado-contenedor-central{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    margin-top: -90px;
+    padding-bottom: 60px !important;
+}
+
+.tema-seccion{
+    color: var(--swiper-theme-color);
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: -25px;
+}
+
+.titulo-seccion{
+    color: var(--text-title-color);
+    font-size: 44px;
+    margin-bottom: 0px;
+}
+
+.descripcion-seccion{
+    color: var(--text-content-color);
+    font-size: 24px;
+}
 
 
 
@@ -72,39 +107,6 @@ body{
     text-align: center;
 }
 
-.encabezado-contenedor{
-    margin: auto;
-    text-align: left;
-    width: 80%;
-    margin-bottom: 35px;
-
-}
-
-
-.encabezado-contenedor-central{
-    margin: auto;
-    text-align: center;
-    width: 80%;
-    margin-top: -90px;
-    padding-bottom: 60px !important;
-}
-
-.tema-seccion{
-    color: var(--swiper-theme-color);
-    font-size: 30px;
-    margin-bottom: -15px;
-}
-
-.titulo-seccion{
-    color: var(--text-title-color);
-    font-size: 44px;
-    margin-bottom: 0px;
-}
-
-.descripcion-seccion{
-    color: var(--text-content-color);
-    font-size: 24px;
-}
 
 .beneficio{
     background: white;

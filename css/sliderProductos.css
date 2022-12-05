@@ -7,7 +7,7 @@
     
 }
 
-.atras, .siguiente{
+.atras, .siguiente, .atras-service, .siguiente-service{
     /* position: absolute; */
     display: block;
     width: 38px !important;
@@ -17,7 +17,7 @@
     transition: opacity 0.5s ease-in-out;
 }
 
-.atras:hover, .siguiente:hover{
+.atras:hover, .siguiente:hover,.atras-service:hover, .siguiente-service:hover{
    opacity: 1;
 }
 

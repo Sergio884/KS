@@ -25,7 +25,7 @@
 }
 
 .logo-container img{
-    width: 200px;
+    width: 100px;
 }
 
 .rutas-container{
@@ -124,11 +124,11 @@
         padding-left:0px;
     }
     .nav-color{
-        height: 130px;
+        height: 50px;
     }
 
     .rutas-margin{
-        margin-top: 30px;
+        margin-top: 7px;
     }
     
     

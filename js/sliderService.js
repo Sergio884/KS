@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function(){
         draggable: true,
         dots: '.slider-indicadores',
         arrows: {
-            prev: '.atras',
-            next: '.siguiente'
+            prev: '.atras-service',
+            next: '.siguiente-service'
         },responsive: [
             
             {

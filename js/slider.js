@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let distancia=33.33;
     if(arrows){
         arrows[0].addEventListener("click",()=>{
-            console.log("left");
+            
             if(bandera==0){
                 contenedorSlider.style.transform=`translateX(${-distancia*2}%)`;
                 bandera=2;
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         });
         arrows[1].addEventListener("click",()=>{
-            console.log("right");
+            
             if(bandera==0){
                 contenedorSlider.style.transform=`translateX(${-distancia}%)`;
                 bandera=bandera+1;

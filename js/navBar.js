@@ -21,10 +21,8 @@ menu.addEventListener("click",()=>{
 })
 
 window.addEventListener("scroll",(event)=>{
-    console.log(event.path[1].pageYOffset)
-    //console.log(window.innerHeight)
+   
     let acty = antY-event.path[1].pageYOffset
-    console.log(acty)
     antY = event.path[1].pageYOffset
 
     

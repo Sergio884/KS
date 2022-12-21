@@ -26,6 +26,7 @@
 
 .logo-container img{
     width: 100px;
+    height: 60px;
 }
 
 .rutas-container{
@@ -54,6 +55,11 @@
 
 
 @media (max-width:1100px) {
+    .logo-container img{
+        width: 75px;
+        height: 45px;
+    }
+    
     .nav-container{
         display: grid;
         grid-template-columns: 30% 70%;

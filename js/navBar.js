@@ -22,8 +22,8 @@ menu.addEventListener("click",()=>{
 
 window.addEventListener("scroll",(event)=>{
    
-    let acty = antY-event.path[1].pageYOffset
-    antY = event.path[1].pageYOffset
+    let acty = antY-event.target.scrollingElement.scrollTop
+    antY = event.target.scrollingElement.scrollTop
 
     
     if(acty < 0){

@@ -14,7 +14,7 @@ menu.addEventListener("click",()=>{
         flagMenu= 1
     }
     else{
-        menu.src="img/menu.svg"
+        menu.src="/img/menu.svg"
         flagMenu =0
     }
     
@@ -32,7 +32,7 @@ window.addEventListener("scroll",(event)=>{
         
         if(rutasContainer.classList.contains("switch-hidden")){
             rutasContainer.classList.remove("switch-hidden");
-            menu.src="assets/img/menu.svg"
+            menu.src="/img/menu.svg"
             flagMenu =0
             
             

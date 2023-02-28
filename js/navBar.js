@@ -21,24 +21,42 @@ menu.addEventListener("click",()=>{
 })
 
 window.addEventListener("scroll",(event)=>{
-   
+    
+    //console.log(window.innerHeight)
     let acty = antY-event.target.scrollingElement.scrollTop
     antY = event.target.scrollingElement.scrollTop
 
     
     if(acty < 0){
         navBar.style = "transform: translateY(-100%); ";
+        
+        if(rutasContainer.classList.contains("switch-hidden")){
+            rutasContainer.classList.remove("switch-hidden");
+            menu.src="assets/img/menu.svg"
+            flagMenu =0
+            
+            
+        }else{
+            
+        }
+        
     }
     else{
         navBar.style = "transform: translateY(0%);";
+        // if(rutasContainer.classList)
+        // rutasContainer.classList.add("switch-hidden");
+        
     }
-    if(event.path[1].pageYOffset < 5){
-        navBar.classList.remove("nav-color")
+
+    if(window.scrollY === 0){
         rutasContainer.classList.remove("rutas-margin")
-    }
-    else{
+        navBar.classList.remove("nav-color")
+        
+    }else{
         rutasContainer.classList.add("rutas-margin")
         navBar.classList.add("nav-color")
     }
+    
+
 
 })

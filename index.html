@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/sliderProductos.css?a=1234">
     <link rel="stylesheet" href="css/maps.css">
+    <link rel="stylesheet" href="css/portafolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
@@ -206,7 +207,7 @@
                                 <p>
                                     Soporte y asesorías            
                                 </p>
-                        </div>
+                            </div>
 
                     </div>
                <img class=" siguiente"src="img/chevron-derecho.webp" alt="flecha derecha">
@@ -274,25 +275,65 @@
                 </div>
                </div>
         </section>      
-            <script type="text/javascript">
-            window.addEventListener('scroll',revelar);
+        <script type="text/javascript">
+        window.addEventListener('scroll',revelar);
 
-            function revelar(){
-                var mostrar = document.querySelectorAll('.revelar');
+        function revelar(){
+            var mostrar = document.querySelectorAll('.revelar');
 
-                for(var i = 0 ; i<mostrar.length;i++){
-                    var windowHeight = window.innerHeight;
-                    var revelarTop = mostrar[i].getBoundingClientRect().top;
-                    var revelarPoint = 100;
+            for(var i = 0 ; i<mostrar.length;i++){
+                var windowHeight = window.innerHeight;
+                var revelarTop = mostrar[i].getBoundingClientRect().top;
+                var revelarPoint = 100;
 
-                    if(revelarTop<windowHeight-revelarPoint){
-                        mostrar[i].classList.add('activo')
-                    }else{
-                        mostrar[i].classList.remove('activo')
-                    }
+                if(revelarTop<windowHeight-revelarPoint){
+                    mostrar[i].classList.add('activo')
+                }else{
+                    mostrar[i].classList.remove('activo')
                 }
             }
-            </script>
+        }
+        </script>
+
+
+        <section id="trabajos">
+            <div class="encabezado-contenedor">
+                <h2 class="tema-seccion">PROYECTOS</h2>
+                <h3 class="titulo-seccion">Conoce algunos de nuestros proyectos</h3>
+                <p class="descripcion-seccion">Te invitamos a conocer algunos de los proyectos que hemos desarrollado:</p>
+            </div>
+            <div class="trabajos-contenedor" target="_blank">
+                <a href="https://fletesymudanzasmax.com.mx/" class="trabajo">
+                    <div class="logo">
+                        <img src="img/portafolio/logos/fletes.webp" alt="SEO, Posicionamiento, Mejor resultado">
+                    </div>
+                    <div class="captura">
+                        <img src="img/portafolio/contenido/fletes.png" alt="SEO, Posicionamiento, Mejor resultado">
+                    </div>
+                </a>
+    
+                <a href="https://consultoriaseprovi.com/" class="trabajo" target="_blank">
+                    <div class="logo">
+                        <img src="img/portafolio/logos/seprovi.png" alt="SEO, Posicionamiento, Mejor resultado">
+                    </div>
+                    <div class="captura">
+                        <img src="img/portafolio/contenido/seprovi.png" alt="SEO, Posicionamiento, Mejor resultado">
+                    </div>
+                </a>
+    
+                <a href="https://www.unemex.com/" class="trabajo" target="_blank">
+                    <div class="logo">
+                        <img src="img/portafolio/logos/unemex.png" alt="SEO, Posicionamiento, Mejor resultado">
+                    </div>
+                    <div class="captura">
+                        <img src="img/portafolio/contenido/unemex.png" alt="SEO, Posicionamiento, Mejor resultado">
+                    </div>
+                </a>
+            </div>
+        </div>
+        </section>
+
+
         <section id="google-maps">
             <div class="map-content">
                 <iframe class="mapa-saorus" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.851881892637!2d-99.2710587!3d19.359929!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201d1d38e418f%3A0x72089930261bffb8!2sSaorus!5e0!3m2!1ses-419!2smx!4v1688841989775!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

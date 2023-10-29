@@ -21,12 +21,14 @@
     <link rel="stylesheet" href="css/sliderProductos.css?a=1234">
     <link rel="stylesheet" href="css/maps.css">
     <link rel="stylesheet" href="css/portafolio.css">
+    <link rel="stylesheet" href="css/dinamicDisplay.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script defer src="js/dinamicDisplay.js"></script>
 <!--     <script src="js/slider.js"></script> -->
     <title>Saorus</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F2C15BJRS"></script>
@@ -54,7 +56,7 @@
     <header>
         <nav class="nav-container" id="nav-container">
             <div class="logo-container">
-                <img src="img/Photoshop/Saorus_4.webp" alt="logo saorus"/>
+                <img src="img/Photoshop/saorus_icon.png" alt="logo saorus"/>
             </div>
             <div class="rutas-container" id="rutas-container">
                 <a href="index.html">Inicio</a>
@@ -69,8 +71,8 @@
         </nav>
     </header>
 
-    <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5215587355557&text=Hola,+me+interesan+sus+servicios" target="_blank">            
-        <img alt="whatsapp icon" src="img/whatsapp.webp">
+    <a id="whatsapp" class="whatsapp" href="https://api.whatsapp.com/send?phone=5215587355557&text=Hola,+me+interesan+sus+servicios" target="_blank">            
+        <img alt="whatsapp icon" src="img/whatsapp.png">
     </a>
 
     <main>
@@ -79,13 +81,13 @@
             <div class="blobs"></div>
             <section class="principal-container">
                 <div class="principal-content-container">
-                    <h1>
+                    <h1 class="title">
                         Creamos un sitio web o aplicación móvil completamente a la medida
                     </h1>
                     <h2 style="font-weight:400">
                         Desarrollo de sitios web, aplicaciones móviles y tiendas en línea completamente personalizadas, asombrosas y a la medida
                     </h2>
-                    <a href="#contacto">Quiero una asesoría gratuita</a>
+                    <a class="contact-hero" href="#contacto">Quiero una asesoría gratuita</a>
                 </div>
                 <div class="principal-image">
                     <img src="img/principal.webp" alt="Desarrollo de un sitio web" />
@@ -149,9 +151,9 @@
             <div class="encabezado-contenedor">
                 <h2 id="slider-lista" class="tema-seccion">BENEFICIOS</h2>
                 <h3 class="titulo-seccion">¿Qué beneficios ofrecemos?</h3>
-                <p class="descripcion-seccion">Al crear tu propio sitio web con nosotros, obtendrás los siguientes beneficios y ventajas sobre la demás competencia:</p>
+                <p class="descripcion-seccion parte1">Al crear tu propio sitio web con nosotros, obtendrás los siguientes beneficios y ventajas sobre la demás competencia:</p>
             </div>
-            <div class="slider-contenido">
+            <div class="slider-contenido aumento">
                <img class="atras"src="img/chevron-izquierdo.webp" alt="flecha izquierda">
                     <div class="slider-lista" >
                            <div class="beneficio">
@@ -241,7 +243,7 @@
 
             <div class="contenedor">
                 
-                <div class="contenido revelar">
+                <div class="contenido show-p-y">
                     <div class="pasos">                        
                         <p>1</p>
                         <div class="imagen" style="padding-top: 7px;padding-bottom: 30px;">
@@ -251,7 +253,7 @@
                     </div>
                 </div>    
                 
-                <div class="contenido revelar">
+                <div class="contenido show-p-y">
                     <div class="pasos dos">
                         <div class="raya"></div>
                         <p>2</p>
@@ -262,7 +264,7 @@
                     </div>
                 </div>
                 
-                <div class="contenido revelar">
+                <div class="contenido show-p-y">
                     <div class="pasos">
                         <div class="raya"></div>
                         <p>3</p>
@@ -273,7 +275,7 @@
                     </div>
                 </div>
 
-                <div class="contenido revelar">
+                <div class="contenido show-p-y">
                     <div class="pasos dos">
                         <div class="raya"></div>
                         <p>4</p>
@@ -285,32 +287,12 @@
                 </div>
                </div>
         </section>      
-        <script type="text/javascript">
-        window.addEventListener('scroll',revelar);
-
-        function revelar(){
-            var mostrar = document.querySelectorAll('.revelar');
-
-            for(var i = 0 ; i<mostrar.length;i++){
-                var windowHeight = window.innerHeight;
-                var revelarTop = mostrar[i].getBoundingClientRect().top;
-                var revelarPoint = 100;
-
-                if(revelarTop<windowHeight-revelarPoint){
-                    mostrar[i].classList.add('activo')
-                }else{
-                    mostrar[i].classList.remove('activo')
-                }
-            }
-        }
-        </script>
-
 
         <section id="trabajos">
             <div class="encabezado-contenedor">
                 <h2 class="tema-seccion">PROYECTOS</h2>
                 <h3 class="titulo-seccion">Conoce algunos de nuestros proyectos</h3>
-                <p class="descripcion-seccion">Te invitamos a conocer algunos de los proyectos que hemos desarrollado:</p>
+                <p class="descripcion-seccion parte2">Te invitamos a conocer algunos de los proyectos que hemos desarrollado:</p>
             </div>
             <div class="trabajos-contenedor" target="_blank">
                 <a href="https://fletesymudanzasmax.com.mx/" class="trabajo">
@@ -347,30 +329,30 @@
                     <h3 class="title-contact" >Ponerse en contacto</h3>
                     <p class="descripcion-seccion">Envíanos un correo electrónico cuando lo desees o un mensaje por WhatsApp. Estamos abiertos a todas las sugerencias de nuestros clientes.</p>
                 </div>
-                <div class="contenedor-mapa-item">
+
+                <div class="contenedor-mapa-item show-p-y">
                     <img alt="Dirección"class="mapa-ubi"src="img/maps-and-location.png">
                     <div class="mapa-info">
                         <h3 class="mapa-titulo">Dirección</h3>
                         <p>José Villagrán, Lomas de Santa Fe, Contadero, Cuajimalpa de Morelos, 01219 Ciudad de México, CDMX</p>
                     </div>
                 </div>
-                <div class="contenedor-mapa-item">
+
+                <div class="contenedor-mapa-item show-p-y">
                     <img alt="Telefono"src="img/llamada-telefonica.png">
                     <div class="mapa-info">
                         <h3>Llamanos</h3>
                         <p>55 47812296</p>
                         <p>55 87355557</p>
                     </div>
-                    
                 </div>
-                <div class="contenedor-mapa-item">
-
+                
+                <div class="contenedor-mapa-item show-p-y">
                     <img src="img/sobre.png">
                     <div alt="email"class="mapa-info">
                         <h3>Nuestro Email</h3>
                         <p>contacto@saourus.com</p> 
                     </div>
-                    
                 </div>
 
             </div>
@@ -456,5 +438,7 @@
 <script src="js/navBar.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
 <script src="js/sliderService.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="js/gsap.js"></script>
 </html>
